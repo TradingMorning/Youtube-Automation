@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shorts Studio — Turn your long videos into shorts</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F8FA; --surface:#FFFFFF; --surface2:#F1F2F5;
+    --accent:#E8365A; --gold:#B9790A;
+    --text:#181A20; --muted:#6B6F7B; --line:#E4E6EB;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; margin:0;}
+  h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .tc{color:var(--muted); font-family:'JetBrains Mono',monospace; font-size:.75rem; letter-spacing:.04em;}
+  .accent{color:var(--accent);}
+  .goldc{color:var(--gold);}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:0 1px 2px rgba(20,20,30,.03);}
+  .btn-primary{background:var(--accent); color:#fff; transition:.2s;}
+  .btn-primary:hover{background:#d12c4d; box-shadow:0 6px 20px rgba(232,54,90,.25);}
+  .btn-ghost{border:1px solid var(--line); color:var(--text); background:#fff;}
+  .btn-ghost:hover{border-color:var(--gold); color:var(--gold);}
+  .strip{position:relative;}
+  .strip::before{
+    content:"";position:absolute; left:0; top:0; bottom:0; width:2px;
+    background:repeating-linear-gradient(180deg, var(--line) 0 6px, transparent 6px 12px);
+  }
+  ::selection{background:var(--accent); color:#fff;}
+  a{text-decoration:none;}
+  .focus-ring:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+  .placeholder-media{background:repeating-linear-gradient(135deg, #ECEDF1 0 10px, #F5F6F8 10px 20px); border:1px dashed #C9CCD3;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 backdrop-blur bg-[#F7F8FA]/90 border-b border-[var(--line)]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-7 h-9 rounded-sm border-2 border-[var(--accent)] relative">
+        <div class="absolute inset-0 m-auto w-2 h-2 rounded-full bg-[var(--accent)]" style="top:2px"></div>
+      </div>
+      <span class="display font-semibold text-lg">Shorts Studio</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-[var(--muted)]">
+      <a href="#how" class="hover:text-[var(--text)] focus-ring">How it works</a>
+      <a href="#features" class="hover:text-[var(--text)] focus-ring">Features</a>
+      <a href="#proof" class="hover:text-[var(--text)] focus-ring">Results</a>
+      <a href="#pricing" class="hover:text-[var(--text)] focus-ring">Pricing</a>
+      <a href="#faq" class="hover:text-[var(--text)] focus-ring">FAQ</a>
+    </nav>
+    <a href="#pricing" class="btn-primary focus-ring px-4 py-2 rounded-lg text-sm font-medium">Get the app</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="strip pl-8 md:pl-16 pr-6 max-w-6xl mx-auto pt-20 pb-24 relative">
+  <p class="tc goldc mb-4">00:00:01 — YOUR VIDEO, UPLOADED</p>
+  <h1 class="display text-4xl md:text-6xl font-semibold leading-[1.08] max-w-3xl">
+    Cut one long video into <span class="accent">a week's worth</span> of shorts.
+  </h1>
+  <p class="text-[var(--muted)] text-lg mt-6 max-w-xl leading-relaxed">
+    Upload a video you made. Shorts Studio finds the moments, reframes them vertical,
+    adds captions and voiceover, and hands you finished clips — ready for Reels, Shorts, and TikTok.
+    Runs on your own PC. No subscription server, no monthly bill passed on to you.
+  </p>
+  <div class="flex flex-wrap gap-4 mt-8">
+    <a href="#pricing" class="btn-primary focus-ring px-6 py-3 rounded-lg font-medium">Download for Windows</a>
+    <a href="#how" class="btn-ghost focus-ring px-6 py-3 rounded-lg font-medium">See how it works</a>
+  </div>
+  <p class="tc mt-6">ONE-TIME LICENSE · WORKS OFFLINE ON YOUR MACHINE · YOUR FOOTAGE NEVER LEAVES YOUR PC</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)]">
+  <p class="tc goldc mb-3">00:04:30 — THE PROCESS</p>
+  <h2 class="display text-3xl font-semibold mb-12">Three steps. Your video stays yours the whole way.</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card p-6">
+      <p class="mono text-sm text-[var(--muted)] mb-3">STEP / UPLOAD</p>
+      <h3 class="text-xl font-medium mb-2">Bring your own footage</h3>
+      <p class="text-[var(--muted)] leading-relaxed">Drop in a podcast, vlog, or talk — anything you filmed or already own the rights to. Nothing is pulled from anyone else's channel.</p>
+    </div>
+    <div class="card p-6">
+      <p class="mono text-sm text-[var(--muted)] mb-3">STEP / EDIT</p>
+      <h3 class="text-xl font-medium mb-2">Smart reframe + voice</h3>
+      <p class="text-[var(--muted)] leading-relaxed">Auto-tracks faces into a 9:16 frame, adds Hindi or English AI voiceover, captions, zoom, and background music — or fine-tune every clip yourself.</p>
+    </div>
+    <div class="card p-6">
+      <p class="mono text-sm text-[var(--muted)] mb-3">STEP / EXPORT</p>
+      <h3 class="text-xl font-medium mb-2">Save and post anywhere</h3>
+      <p class="text-[var(--muted)] leading-relaxed">Export finished MP4s and upload them yourself to YouTube Shorts, Reels, or TikTok — full control over what goes out and when.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)]">
+  <p class="tc goldc mb-3">00:09:15 — INSIDE THE EDITOR</p>
+  <h2 class="display text-3xl font-semibold mb-12 max-w-2xl">Everything a clipping editor does by hand, built into one timeline.</h2>
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="card p-6">
+      <h3 class="font-medium mb-1">Smart Reframe</h3>
+      <p class="text-[var(--muted)] text-sm leading-relaxed">Face-tracking with motion smoothing keeps speakers centered in vertical frame automatically, even with multiple people talking.</p>
+    </div>
+    <div class="card p-6">
+      <h3 class="font-medium mb-1">AI Voiceover</h3>
+      <p class="text-[var(--muted)] text-sm leading-relaxed">Natural Hindi and English neural voices, male and female, several accents — narrate or redub a clip in minutes.</p>
+    </div>
+    <div class="card p-6">
+      <h3 class="font-medium mb-1">Captions & Text</h3>
+      <p class="text-[var(--muted)] text-sm leading-relaxed">Auto-generated captions, plus logo, text overlays, and shape/blur tools for covering or highlighting parts of the frame.</p>
+    </div>
+    <div class="card p-6">
+      <h3 class="font-medium mb-1">Speed, Zoom & Color</h3>
+      <p class="text-[var(--muted)] text-sm leading-relaxed">Per-clip speed ramping, zoom, and color grading, with a fast preview so changes render almost instantly.</p>
+    </div>
+    <div class="card p-6">
+      <h3 class="font-medium mb-1">Background Music Library</h3>
+      <p class="text-[var(--muted)] text-sm leading-relaxed">Drop your own licensed tracks in and mix them under your voiceover automatically.</p>
+    </div>
+    <div class="card p-6">
+      <h3 class="font-medium mb-1">Parallel Export</h3>
+      <p class="text-[var(--muted)] text-sm leading-relaxed">Cuts multiple clips at once using your CPU's full threads, so a long video becomes a batch of shorts fast.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF / RESULTS (homepage summary) -->
+<section id="proof" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)]">
+  <p class="tc goldc mb-3">00:16:20 — RESULTS</p>
+  <h2 class="display text-3xl font-semibold mb-4">Made with the same tool it sells.</h2>
+  <p class="text-[var(--muted)] mb-10 max-w-xl">Every clip below was cut, reframed, and posted using Shorts Studio itself.</p>
+  <div class="grid md:grid-cols-3 gap-5 mb-8">
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">ADD SCREEN-RECORDING<br>OR CLIP THUMBNAIL</span>
+    </div>
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">ADD FACEBOOK/INSTA<br>INSIGHTS SCREENSHOT</span>
+    </div>
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">ADD BEFORE/AFTER<br>FOLLOWER COUNT SCREENSHOT</span>
+    </div>
+  </div>
+  <a href="success.html" class="btn-ghost focus-ring inline-block px-6 py-3 rounded-lg font-medium">See the full results page →</a>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)]">
+  <p class="tc goldc mb-3">00:20:40 — LICENSE</p>
+  <h2 class="display text-3xl font-semibold mb-4">One price. No surprise renewals.</h2>
+  <p class="text-[var(--muted)] mb-12 max-w-xl">Future updates to the editor are included at no extra cost for your license tier.</p>
+  <div class="grid md:grid-cols-2 gap-6 max-w-3xl">
+    <div class="card p-8 flex flex-col">
+      <p class="tc mb-2">MONTHLY</p>
+      <p class="display text-4xl font-semibold mb-1">₹149<span class="text-base text-[var(--muted)] font-normal">/mo</span></p>
+      <p class="text-[var(--muted)] text-sm mb-6">Good for trying it out first.</p>
+      <ul class="text-sm text-[var(--muted)] space-y-2 mb-8 flex-1">
+        <li>· Full editor, unlimited exports</li>
+        <li>· Hindi + English AI voices</li>
+        <li>· Cancel anytime</li>
+      </ul>
+      <a href="#" class="btn-ghost focus-ring text-center px-6 py-3 rounded-lg font-medium">Choose monthly</a>
+    </div>
+    <div class="card p-8 flex flex-col relative overflow-hidden" style="border-color:var(--gold)">
+      <p class="tc goldc mb-2">LIFETIME</p>
+      <p class="display text-4xl font-semibold mb-1">₹799<span class="text-base text-[var(--muted)] font-normal"> one-time</span></p>
+      <p class="text-[var(--muted)] text-sm mb-6">Pay once, keep every future update.</p>
+      <ul class="text-sm text-[var(--muted)] space-y-2 mb-8 flex-1">
+        <li>· Everything in Monthly</li>
+        <li>· All future updates included</li>
+        <li>· Priority support</li>
+      </ul>
+      <a href="#" class="btn-primary focus-ring text-center px-6 py-3 rounded-lg font-medium">Choose lifetime</a>
+    </div>
+  </div>
+  <p class="tc mt-8">UPI · GPAY · PHONEPE · CARDS FOR INTERNATIONAL BUYERS — SECURE CHECKOUT VIA PAYMENT PARTNER</p>
+  <p class="tc mt-2">LICENSE LOCKS TO ONE DEVICE ON ACTIVATION — DOWNLOAD LINK IS SENT ONLY AFTER PAYMENT CONFIRMS</p>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)]">
+  <p class="tc goldc mb-3">00:26:10 — QUESTIONS</p>
+  <h2 class="display text-3xl font-semibold mb-12">FAQ</h2>
+  <div class="max-w-2xl space-y-4">
+    <details class="card p-5 group">
+      <summary class="cursor-pointer font-medium list-none flex justify-between items-center">Does this download videos from other people's channels?
+        <span class="tc goldc group-open:rotate-45 transition inline-block">+</span></summary>
+      <p class="text-[var(--muted)] text-sm mt-3 leading-relaxed">No. You upload footage you filmed or already have the rights to. That's the whole workflow.</p>
+    </details>
+    <details class="card p-5 group">
+      <summary class="cursor-pointer font-medium list-none flex justify-between items-center">Does it need a subscription server to run?
+        <span class="tc goldc group-open:rotate-45 transition inline-block">+</span></summary>
+      <p class="text-[var(--muted)] text-sm mt-3 leading-relaxed">No — it runs locally on your own Windows PC. Your files never leave your machine.</p>
+    </details>
+    <details class="card p-5 group">
+      <summary class="cursor-pointer font-medium list-none flex justify-between items-center">Can I use one license on two computers?
+        <span class="tc goldc group-open:rotate-45 transition inline-block">+</span></summary>
+      <p class="text-[var(--muted)] text-sm mt-3 leading-relaxed">Each license activates on one device. Need it on a second machine? Contact support to move it.</p>
+    </details>
+    <details class="card p-5 group">
+      <summary class="cursor-pointer font-medium list-none flex justify-between items-center">What if I'm outside India?
+        <span class="tc goldc group-open:rotate-45 transition inline-block">+</span></summary>
+      <p class="text-[var(--muted)] text-sm mt-3 leading-relaxed">Use the card checkout option — it converts your currency automatically at payment.</p>
+    </details>
+    <details class="card p-5 group">
+      <summary class="cursor-pointer font-medium list-none flex justify-between items-center">Are updates really free?
+        <span class="tc goldc group-open:rotate-45 transition inline-block">+</span></summary>
+      <p class="text-[var(--muted)] text-sm mt-3 leading-relaxed">Yes, for the life of your license tier — new features roll into the same app with no extra charge.</p>
+    </details>
+  </div>
+</section>
+
+<footer class="max-w-6xl mx-auto px-6 py-12 border-t border-[var(--line)] flex flex-col md:flex-row justify-between gap-4 text-sm text-[var(--muted)]">
+  <span>Shorts Studio</span>
+  <span class="tc">MADE FOR CREATORS EDITING THEIR OWN FOOTAGE</span>
+</footer>
+
+</body>
+</html>

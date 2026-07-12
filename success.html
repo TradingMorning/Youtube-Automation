@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results — Shorts Studio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F8FA; --surface:#FFFFFF; --accent:#E8365A; --gold:#B9790A;
+    --text:#181A20; --muted:#6B6F7B; --line:#E4E6EB;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; margin:0;}
+  h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
+  .tc{color:var(--muted); font-family:'JetBrains Mono',monospace; font-size:.75rem; letter-spacing:.04em;}
+  .accent{color:var(--accent);}
+  .goldc{color:var(--gold);}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:0 1px 2px rgba(20,20,30,.03);}
+  .btn-ghost{border:1px solid var(--line); color:var(--text); background:#fff; transition:.2s;}
+  .btn-ghost:hover{border-color:var(--gold); color:var(--gold);}
+  a{text-decoration:none;}
+  .focus-ring:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+  .placeholder-media{background:repeating-linear-gradient(135deg, #ECEDF1 0 10px, #F5F6F8 10px 20px); border:1px dashed #C9CCD3;}
+</style>
+</head>
+<body>
+
+<header class="sticky top-0 z-50 backdrop-blur bg-[#F7F8FA]/90 border-b border-[var(--line)]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 focus-ring">
+      <div class="w-7 h-9 rounded-sm border-2 border-[var(--accent)] relative">
+        <div class="absolute inset-0 m-auto w-2 h-2 rounded-full bg-[var(--accent)]" style="top:2px"></div>
+      </div>
+      <span class="display font-semibold text-lg">Shorts Studio</span>
+    </a>
+    <a href="index.html#pricing" class="btn-ghost focus-ring px-4 py-2 rounded-lg text-sm font-medium">Get the app</a>
+  </div>
+</header>
+
+<section class="max-w-6xl mx-auto px-6 pt-16 pb-10">
+  <p class="tc goldc mb-3">00:00:01 — RESULTS</p>
+  <h1 class="display text-4xl md:text-5xl font-semibold leading-tight max-w-2xl">
+    Everything here was cut with Shorts Studio, posted by real accounts.
+  </h1>
+  <p class="text-[var(--muted)] text-lg mt-5 max-w-xl leading-relaxed">
+    Replace each block below with your own screenshots or an embedded clip — insights screenshots,
+    a screen-recording of the export, and the actual posted short side by side.
+  </p>
+</section>
+
+<!-- HEADLINE STAT STRIP — replace numbers with your real, verifiable ones -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <div class="grid sm:grid-cols-3 gap-5">
+    <div class="card p-6">
+      <p class="tc mb-2">FOLLOWERS GAINED</p>
+      <p class="display text-3xl font-semibold">[ADD REAL NUMBER]</p>
+      <p class="text-[var(--muted)] text-sm mt-1">Screenshot the platform's own insights page as proof.</p>
+    </div>
+    <div class="card p-6">
+      <p class="tc mb-2">TIME PERIOD</p>
+      <p class="display text-3xl font-semibold">[ADD DATE RANGE]</p>
+      <p class="text-[var(--muted)] text-sm mt-1">Specific dates make this checkable, which makes it trusted.</p>
+    </div>
+    <div class="card p-6">
+      <p class="tc mb-2">SHORTS POSTED</p>
+      <p class="display text-3xl font-semibold">[ADD COUNT]</p>
+      <p class="text-[var(--muted)] text-sm mt-1">Link each one if you can — viewers will check.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF GRID -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <p class="tc goldc mb-3">00:05:40 — PROOF</p>
+  <h2 class="display text-2xl font-semibold mb-8">Screenshots & clips</h2>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">EMBED VIDEO CLIP<br>(the finished short)</span>
+    </div>
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">INSIGHTS SCREENSHOT<br>(views/reach graph)</span>
+    </div>
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">FOLLOWER COUNT<br>BEFORE → AFTER</span>
+    </div>
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">EMBED VIDEO CLIP<br>(export screen-recording)</span>
+    </div>
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">COMMENTS/ENGAGEMENT<br>SCREENSHOT</span>
+    </div>
+    <div class="placeholder-media rounded-xl aspect-[9/16] flex items-center justify-center">
+      <span class="tc text-center px-4">ADD MORE AS<br>YOU GET THEM</span>
+    </div>
+  </div>
+  <p class="tc mt-6">TIP: an unedited screenshot with the platform's own UI visible (date, handle, numbers) is far more convincing than a styled graphic — don't crop that context out.</p>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 py-16 text-center">
+  <a href="index.html#pricing" class="inline-block px-8 py-3 rounded-lg font-medium text-white" style="background:var(--accent)">Get Shorts Studio</a>
+</section>
+
+<footer class="max-w-6xl mx-auto px-6 py-12 border-t border-[var(--line)] flex flex-col md:flex-row justify-between gap-4 text-sm text-[var(--muted)]">
+  <span>Shorts Studio</span>
+  <a href="index.html" class="tc hover:text-[var(--text)] focus-ring">← Back to homepage</a>
+</footer>
+
+</body>
+</html>
