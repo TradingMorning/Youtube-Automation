@@ -1,0 +1,12 @@
+{
+  "name": "youtube-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shorts Studio landing page + license/payment backend (Vercel serverless)",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/kv": "^1.0.1"
+  }
+}
